@@ -1,4 +1,4 @@
-# k6_teste
+# k6 teste
 Testes de performance
 
 # Tecnologias utilizadas
