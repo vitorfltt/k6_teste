@@ -2,10 +2,10 @@ name: K6 testes
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   k6:
@@ -21,4 +21,4 @@ jobs:
           sudo apt-get install -y k6
 
       - name: Run K6 Load Test
-        run: k6 run path/to/your/script.js
+        run: k6 run C:\K6\scenarios\Get-Customer.js
