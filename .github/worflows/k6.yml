@@ -15,10 +15,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y k6
-
       - name: Run K6 Load Test
-        run: k6 run C:\K6\scenarios\Get-Customer.js
+        run: k6 run ./scenarios/Get-Customer.js
