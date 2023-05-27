@@ -3,6 +3,8 @@
 # k6 teste
 Testes de performance
 
+Este repositório realiza testes de performance com o k6, que é uma ferramenta moderna de teste de carga. Ele foi desenvolvido para ser poderoso, extensível e completo.
+
 # Tecnologias utilizadas
 - [JS](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) 
 - [npm](https://www.npmjs.com/)
