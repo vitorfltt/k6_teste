@@ -18,6 +18,8 @@ jobs:
       - name: Install k6
         run: |
           sudo apt-get update
+          sudo apt-get install -y curl
+          sudo sh -c "echo 'deb https://dl.bintray.com/loadimpact/deb stable main' | tee /etc/apt/sources.list.d/k6.list"
           sudo apt-get install -y k6
 
       - name: Run K6 Load Test
