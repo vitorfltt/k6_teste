@@ -1,3 +1,5 @@
+<img src="https://a.fsdn.com/allura/s/load-impact/icon?1649215352?&w=90" alt="k6">
+
 # k6 teste
 Testes de performance
 
