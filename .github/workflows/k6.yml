@@ -17,10 +17,10 @@ jobs:
 
       - name: Install k6
         run: |
-          sudo apt-get update
-          sudo apt-get install -y curl
-          sudo sh -c "echo 'deb https://dl.bintray.com/loadimpact/deb stable main' | tee /etc/apt/sources.list.d/k6.list"
-          sudo apt-get install -y k6
+          curl -OL "https://github.com/k6io/k6/releases/download/v0.34.1/k6-v0.34.1-linux64.tar.gz"
+          tar xzvf k6-v0.34.1-linux64.tar.gz
+          sudo mv k6-v0.34.1-linux64/k6 /usr/local/bin/
+          rm -rf k6-v0.34.1-linux64 k6-v0.34.1-linux64.tar.gz
 
       - name: Run K6 Load Test
         run: k6 run ./scenarios/Get-Customer.js
